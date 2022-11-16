@@ -1,0 +1,80 @@
+@startuml
+class attacks.statusAttacks.Growth {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class pokemons.Vigoroth {
+}
+class pokemons.Cubone {
+}
+class attacks.physicalAttacks.RockTomb {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class attacks.statusAttacks.Leer {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class attacks.statusAttacks.Swagger {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class attacks.physicalAttacks.Facade {
+# void applyOppDamage(Pokemon,double)
+# String describe()
+}
+class attacks.physicalAttacks.FurySwipes {
+# void applyOppDamage(Pokemon,double)
+# String describe()
+}
+class attacks.statusAttacks.Growl {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class attacks.specialAttacks.FocusBlast {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class pokemons.Slaking {
+}
+class attacks.physicalAttacks.AerialAce {
+# boolean checkAccuracy(Pokemon,Pokemon)
+# String describe()
+}
+class pokemons.Marowalk {
+}
+class attacks.statusAttacks.CalmMind {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+class pokemons.Slakoth {
+}
+class attacks.statusAttacks.Confide {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+class pokemons.Comfey {
+}
+class Main {
++ {static} void main(String[])
+}
+
+
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.Growth
+pokemons.Pokemon <|-- pokemons.Vigoroth
+pokemons.Pokemon <|-- pokemons.Cubone
+attacks.physicalAttacks.PhysicalMove <|-- attacks.physicalAttacks.RockTomb
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.Leer
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.Swagger
+attacks.physicalAttacks.PhysicalMove <|-- attacks.physicalAttacks.Facade
+attacks.physicalAttacks.PhysicalMove <|-- attacks.physicalAttacks.FurySwipes
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.Growl
+attacks.specialAttacks.SpecialMove <|-- attacks.specialAttacks.FocusBlast
+pokemons.Pokemon <|-- pokemons.Slaking
+attacks.physicalAttacks.PhysicalMove <|-- attacks.physicalAttacks.AerialAce
+pokemons.Pokemon <|-- pokemons.Marowalk
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.CalmMind
+pokemons.Pokemon <|-- pokemons.Slakoth
+attacks.statusAttacks.StatusMove <|-- attacks.statusAttacks.Confide
+pokemons.Pokemon <|-- pokemons.Comfey
+@enduml

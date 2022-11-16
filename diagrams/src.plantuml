@@ -1,0 +1,111 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class AerialAce {
+  + AerialAce(): 
+  # describe(): String
+  # checkAccuracy(Pokemon, Pokemon): boolean
+}
+class CalmMind {
+  + CalmMind(): 
+  # applySelfEffects(Pokemon): void
+  # describe(): String
+}
+class Comfey {
+  + Comfey(String, int): 
+}
+class Confide {
+  + Confide(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class Cubone {
+  + Cubone(String, int): 
+}
+class Facade {
+  + Facade(): 
+  # applyOppDamage(Pokemon, double): void
+  # describe(): String
+}
+class FocusBlast {
+  + FocusBlast(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class FurySwipes {
+  + FurySwipes(): 
+  # applyOppDamage(Pokemon, double): void
+  # describe(): String
+}
+class Growl {
+  + Growl(): 
+  # describe(): String
+  # applyOppEffects(Pokemon): void
+}
+class Growth {
+  + Growth(): 
+  # applySelfEffects(Pokemon): void
+  # describe(): String
+}
+class Leer {
+  + Leer(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class Main {
+  + Main(): 
+  + main(String[]): void
+}
+class Marowalk {
+  + Marowalk(String, int): 
+}
+class RockTomb {
+  + RockTomb(): 
+  # describe(): String
+  # applyOppEffects(Pokemon): void
+}
+class Slaking {
+  + Slaking(String, int): 
+}
+class Slakoth {
+  + Slakoth(String, int): 
+}
+class Swagger {
+  + Swagger(): 
+  # applyOppEffects(Pokemon): void
+  # describe(): String
+}
+class Vigoroth {
+  + Vigoroth(String, int): 
+}
+
+Comfey      -[#595959,dashed]->  CalmMind   : "«create»"
+Comfey      -[#595959,dashed]->  Confide    : "«create»"
+Comfey      -[#595959,dashed]->  Growth     : "«create»"
+Comfey      -[#595959,dashed]->  Swagger    : "«create»"
+Cubone      -[#595959,dashed]->  Growl      : "«create»"
+Cubone      -[#595959,dashed]->  Leer       : "«create»"
+Cubone      -[#595959,dashed]->  Swagger    : "«create»"
+Main        -[#595959,dashed]->  Comfey     : "«create»"
+Main        -[#595959,dashed]->  Cubone     : "«create»"
+Main        -[#595959,dashed]->  Marowalk   : "«create»"
+Main        -[#595959,dashed]->  Slaking    : "«create»"
+Main        -[#595959,dashed]->  Slakoth    : "«create»"
+Main        -[#595959,dashed]->  Vigoroth   : "«create»"
+Marowalk    -[#595959,dashed]->  FocusBlast : "«create»"
+Marowalk    -[#595959,dashed]->  Growl      : "«create»"
+Marowalk    -[#595959,dashed]->  Leer       : "«create»"
+Marowalk    -[#595959,dashed]->  Swagger    : "«create»"
+Slaking     -[#595959,dashed]->  AerialAce  : "«create»"
+Slaking     -[#595959,dashed]->  Facade     : "«create»"
+Slaking     -[#595959,dashed]->  FurySwipes : "«create»"
+Slaking     -[#595959,dashed]->  RockTomb   : "«create»"
+Slakoth     -[#595959,dashed]->  AerialAce  : "«create»"
+Slakoth     -[#595959,dashed]->  Leer       : "«create»"
+Vigoroth    -[#595959,dashed]->  AerialAce  : "«create»"
+Vigoroth    -[#595959,dashed]->  Facade     : "«create»"
+Vigoroth    -[#595959,dashed]->  FurySwipes : "«create»"
+@enduml
